@@ -1,0 +1,14 @@
+-- Normalization Analysis
+--
+-- 1NF:
+-- All tables store atomic values. No column contains multiple.
+--
+-- 2NF:
+-- The enrollments table has a composite candidate key (student_id, course_id).
+-- The non-key attributes (enrollment_date and grade) depend on the complete
+-- student-course combination and not on either column individually.
+--
+-- 3NF:
+-- There are no transitive dependencies in the enrollments table.
+-- Enrollment information depends directly on the enrollment record.
+-- Student and course details are stored in separate tables, avoiding redundancy.
